@@ -1,10 +1,10 @@
-# """word count"""
+"""word count"""
 
-# # recieve the text
-# # split to words and save in a list
-# # loop thro the list conting and saving the out 
+# recieve the text
+# split to words and save in a list
+# loop thro the list conting and saving the out 
 
-def word_count(words):
+def words(words):
 	try:
 		words = words.split()
 		dic_out = {}
@@ -14,5 +14,7 @@ def word_count(words):
 			else:
 				dic_out[word] = 1
 		return dic_out
+	except Exception:
+		return 'invalid'
 
 # print(word_count("hello there we hello we are people from planet earth!"))
